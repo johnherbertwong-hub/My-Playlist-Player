@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Playlist</title>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <audio src="./audio/David Kushner - Dead Man.mp3" id="audioPlayer" controls></audio>
+
+    <section class="base-background">
+
+        <div class="base-container">
+
+            <div class="cover-container">
+                <img src="./cover/Dead Man.jpeg" alt="">
+            </div>
+
+            <div class="slider-container">
+
+                <div class="slider-input">
+                    <input type="range" id="seekSlider" value="0" min="0" max="100">
+                </div>
+                
+                <div class="slider-time">
+                    <span id="currentTime-song">0:00</span>
+                    <span id="duration-song">0:00</span>
+                </div>
+
+            </div>
+
+            <div class="control-container">
+                
+                <button class="skipSong-btn">
+                    <i class="fa-solid fa-backward"></i>
+                </button>
+                <button class="playSong-btn">
+                    <i class="fa-solid fa-pause"></i>
+                </button>
+                <button class="skipSong-btn">
+                    <i class="fa-solid fa-forward"></i>
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+</body>
+</html>
