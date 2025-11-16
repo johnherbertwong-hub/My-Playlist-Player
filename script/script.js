@@ -59,6 +59,8 @@ function updateSong(index) {
 
     audio.load();
     audio.play();
+
+    updatePlayBtn();
 }
 
 nextBtn.addEventListener("click", () => {
@@ -80,7 +82,9 @@ prevBtn.addEventListener("click", () => {
 
 });
 
-playBtn.addEventListener("click", () => {
+playBtn.addEventListener("click", updatePlayBtn);
+
+function updatePlayBtn() {
     if (audio.paused) {
         audio.play();
         playBtn_display.className = "fa-solid fa-pause";
@@ -91,7 +95,9 @@ playBtn.addEventListener("click", () => {
         playBtn_display.className = "fa-solid fa-play";
         playBtn.style.paddingLeft = "5px";
     }
-});
+};
+
+updatePlayBtn();
 
 audio.addEventListener("loadedmetadata", () => {
     durationText.textContent = formatTime(audio.duration);
