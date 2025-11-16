@@ -24,12 +24,12 @@
 
     align-items: center;
 
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
 
     min-width: 370px;
-    width: 600px;
-    padding: 50px;
+    width: 500px;
+    padding: 40px;
 
     border-radius: 35px;
     box-shadow: 0px 0px 9px rgb(41, 41, 41);
@@ -68,7 +68,7 @@
 }
 
 #songTitle {
-    font-size: 42px;
+    font-size: 40px;
     color: #151515;
 }
 
@@ -151,7 +151,15 @@
 }
 
 #playSong-btn {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
     border-radius: 50px;
+
+    padding-left: 5px;
 
     background-color: rgb(251, 251, 251);
     color: rgb(16, 16, 16);
@@ -167,4 +175,12 @@
 
 .skipSong-btn:hover {
     color: rgb(251, 251, 251);
+}
+
+@media screen and (max-width : 590px) {
+    .base-container {
+        border-radius: 0px;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
