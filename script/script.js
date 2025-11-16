@@ -71,7 +71,7 @@ function updateSong(index) {
     songArtist.innerHTML = playlist[index]["artist"];
 
     playBtn_display.className = "fa-solid fa-pause";
-    playBtn.style.paddingLeft = "5px";
+    playBtn.style.paddingLeft = "0px";
 
     audio.load();
     audio.play();
