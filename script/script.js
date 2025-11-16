@@ -73,7 +73,14 @@ function updateSong(index) {
     audio.load();
     audio.play();
 
-    updatePlayBtn();
+    if (audio.paused) {
+        playBtn_display.className = "fa-solid fa-pause";
+        playBtn.style.paddingLeft = "0px";
+        
+    } else {
+        playBtn_display.className = "fa-solid fa-play";
+        playBtn.style.paddingLeft = "5px";
+    }
 }
 
 nextBtn.addEventListener("click", () => {
