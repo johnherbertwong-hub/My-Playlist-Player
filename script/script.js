@@ -111,7 +111,12 @@ audio.addEventListener("timeupdate", () => {
     currentTimeText.textContent = formatTime(audio.currentTime);
 
     if (audio.currentTime === audio.duration) {
-        songIndex += 1;
+
+        if (songIndex === (playlist.length - 1)) {
+            songIndex = 0
+        } else {
+            songIndex += 1;
+        }
         updateSong(songIndex);
     }
     
