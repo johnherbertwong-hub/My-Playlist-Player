@@ -43,6 +43,19 @@ const playlist = [
 
 let songIndex = 0
 
+function updatePlayBtn() {
+    if (audio.paused) {
+        audio.play();
+        playBtn_display.className = "fa-solid fa-pause";
+        playBtn.style.paddingLeft = "0px";
+        
+    } else {
+        audio.pause();
+        playBtn_display.className = "fa-solid fa-play";
+        playBtn.style.paddingLeft = "5px";
+    }
+};
+
 function updateSong(index) {
     audio.src = playlist[index]["audio_src"];
     cover.src = playlist[index]["cover_src"];
@@ -79,23 +92,9 @@ prevBtn.addEventListener("click", () => {
     }
     updateSong(songIndex);
 
-
 });
 
 playBtn.addEventListener("click", updatePlayBtn);
-
-function updatePlayBtn() {
-    if (audio.paused) {
-        audio.play();
-        playBtn_display.className = "fa-solid fa-pause";
-        playBtn.style.paddingLeft = "0px";
-        
-    } else {
-        audio.pause();
-        playBtn_display.className = "fa-solid fa-play";
-        playBtn.style.paddingLeft = "5px";
-    }
-};
 
 updatePlayBtn();
 
