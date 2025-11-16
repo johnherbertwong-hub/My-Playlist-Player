@@ -96,8 +96,6 @@ prevBtn.addEventListener("click", () => {
 
 playBtn.addEventListener("click", updatePlayBtn);
 
-updatePlayBtn();
-
 audio.addEventListener("loadedmetadata", () => {
     durationText.textContent = formatTime(audio.duration);
 });
