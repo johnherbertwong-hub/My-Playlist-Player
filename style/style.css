@@ -68,12 +68,12 @@
 }
 
 #songTitle {
-    font-size: 40px;
+    font-size: 36px;
     color: #151515;
 }
 
 #songArtist {
-    font-size: 19px;
+    font-size: 18px;
     color: #4f4f4f;
 
     font-weight: 100px;
@@ -181,6 +181,9 @@
     .base-container {
         border-radius: 0px;
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100vh;
+
+        justify-content: center;
+        align-items: center;
     }
 }

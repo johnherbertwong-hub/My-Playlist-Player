@@ -52,7 +52,7 @@ function updateSong(index) {
     if (playlist[index]["title"].length >= 19) {
         songTitle.style.fontSize = "28px";
     } else {
-        songTitle.style.fontSize = "40px";
+        songTitle.style.fontSize = "36px";
     }
     songTitle.innerHTML = playlist[index]["title"];
     songArtist.innerHTML = playlist[index]["artist"];
