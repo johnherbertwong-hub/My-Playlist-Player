@@ -44,13 +44,13 @@
 
     aspect-ratio: 1/1;
 
-    min-width: 100%;
+    width: 100%;
 }
 
 #cover-img {
     aspect-ratio: 1/1;
 
-    max-width: 500px;
+    max-width: 100%;
 
     border-radius: 15px;
 }
@@ -74,7 +74,7 @@
 
 #songArtist {
     font-size: 19px;
-    color: #2c2c2c;
+    color: #4f4f4f;
 
     font-weight: 100px;
 }
@@ -153,10 +153,18 @@
 #playSong-btn {
     border-radius: 50px;
 
-    background-color: white;
+    background-color: rgb(251, 251, 251);
     color: rgb(16, 16, 16);
 }
 
 .skipSong-btn {
     color: rgb(241, 241, 241);
+}
+
+#playSong-btn:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.skipSong-btn:hover {
+    color: rgb(251, 251, 251);
 }
