@@ -16,13 +16,18 @@
         <div class="base-container">
 
             <div class="cover-container">
-                <img src="./cover/Dead Man.jpeg" alt="">
+                <img src="./cover/Dead Man.jpeg" id="cover-img" alt="">
+            </div>
+
+            <div class="information-container">
+                <h1 id="songTitle">Dead Man</h1>
+                <h4 id="songArtist">David Kushner</h4>
             </div>
 
             <div class="slider-container">
 
                 <div class="slider-input">
-                    <input type="range" id="seekSlider" value="0" min="0" max="100">
+                    <input type="range" id="slider-song" value="0" min="0" max="100">
                 </div>
                 
                 <div class="slider-time">
@@ -37,7 +42,7 @@
                 <button class="skipSong-btn">
                     <i class="fa-solid fa-backward"></i>
                 </button>
-                <button class="playSong-btn">
+                <button id="playSong-btn">
                     <i class="fa-solid fa-pause"></i>
                 </button>
                 <button class="skipSong-btn">
@@ -49,6 +54,6 @@
 
     </section>
     
-
+    <script src="./script/script.js"></script>
 </body>
 </html>

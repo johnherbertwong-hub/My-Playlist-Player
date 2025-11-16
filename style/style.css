@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Helvetica, sans-serif;
+}
+
+.base-background {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    background-image: linear-gradient(180deg, rgb(58, 42, 25), rgb(246, 210, 173));
+}
+
+.base-container {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+
+    min-width: 370px;
+    width: 600px;
+    padding: 50px;
+
+    border-radius: 35px;
+    box-shadow: 0px 0px 9px rgb(41, 41, 41);
+}
+
+.cover-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    aspect-ratio: 1/1;
+
+    min-width: 100%;
+}
+
+#cover-img {
+    aspect-ratio: 1/1;
+
+    max-width: 500px;
+
+    border-radius: 15px;
+}
+
+.information-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100%;
+
+    justify-content: start;
+    align-items: start;
+
+    padding: 10px 0;
+}
+
+#songTitle {
+    font-size: 42px;
+    color: #151515;
+}
+
+#songArtist {
+    font-size: 19px;
+    color: #2c2c2c;
+
+    font-weight: 100px;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100%;
+}
+
+.slider-input {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 100%;
+
+    margin: 5px 0;
+}
+
+#slider-song {
+    appearance: none;
+    -webkit-appearance: none;
+
+    height: 8px;
+    background: linear-gradient(#ffffff 0 0) 0/0% 100% no-repeat #ffffff44;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+#slider-song::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+}
+
+/* #slider-song::-webkit-slider-runnable-track {
+    background: #262626;
+} */
+
+.slider-time {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    justify-content: space-between;
+
+    color: rgb(247, 247, 247);
+}
+
+.control-container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 40px;
+    min-width: 100%;
+}
+
+.control-container button {
+    min-width: 70px;
+    min-height: 70px;
+
+    font-size: 30px;
+
+    background-color: transparent;
+    border: none;
+
+    cursor: pointer;
+}
+
+#playSong-btn {
+    border-radius: 50px;
+
+    background-color: white;
+    color: rgb(16, 16, 16);
+}
+
+.skipSong-btn {
+    color: rgb(241, 241, 241);
+}
